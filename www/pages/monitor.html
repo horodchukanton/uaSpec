@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>uaSpec</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/legacy/html5shiv.min.js"></script>
+    <script src="../js/legacy/respond.min.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+        .green{
+            color: greenyellow;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<header></header>
+<div class="container-fluid">
+    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                Моніторинг
+            </div>
+            <div class="panel-body">
+                <form id="monitoredForm">
+                    <div id="monitorPanel">
+
+                    </div>
+                </form>
+            </div>
+            <div class="panel-footer text-center">
+                <button class="btn btn-primary" onclick="submitMonitoredForm()">Додати</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 col-lg-8 col-sm-6 col-xs-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                Рівні
+            </div>
+            <div class="panel-body">
+                <div class="row bg-info">
+                    <label class="col-md-2 col-lg-2 col-xs-2 col-sm-2">#</label>
+                    <label class="col-md-2 col-lg-2 col-xs-2 col-sm-2">Довж. хв.</label>
+                    <label class="col-md-2 col-lg-2 col-xs-2 col-sm-2">Т. відл.</label>
+                    <label class="col-md-2 col-lg-2 col-xs-2 col-sm-2">Рівень</label>
+                    <label class="col-md-2 col-lg-2 col-xs-2 col-sm-2">Відх.</label>
+                    <label class="col-md-2 col-lg-2 col-xs-2 col-sm-2">Статус</label>
+                </div>
+                <div id="levelPanel">
+
+                </div>
+            </div>
+            <div class="panel-footer text-center">
+                <button class="btn btn-primary" onclick="">Зберегти</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer></footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../js/jquery/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+<!--Communicator parser-->
+<script src="../js/custom/com.js"></script>
+<!--Static parser-->
+<script src="../js/custom/static.js"></script>
+<!--Monitor script-->
+<script src="../js/custom/monitor.js"></script>
+</body>
+</html>
