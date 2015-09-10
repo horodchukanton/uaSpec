@@ -1,0 +1,1 @@
+java -cp ./out;./lib/*;./lib/jetty-production/lib/*;./lib/JFreeChart/* -Dfile.encoding=UTF-8 com.anykey.uaspec.Main COM5 80

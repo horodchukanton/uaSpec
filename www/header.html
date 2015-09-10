@@ -1,0 +1,41 @@
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="padding-top: 0;"><img src="../img/logo.PNG" height="48" width="48" class="img-circle"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Головна</a></li>
+                <li><a href="/pages/highchart.html">Спектрограма</a></li>
+                <li><a href="/pages/monitor.html">Моніторинг</a></li>
+                <!--<li><a href="/pages/analisys.html">Аналіз</a></li>-->
+                                <!--<li><a href="#">Про нас</a></li>-->
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Керування<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                    <!--
+                        <li><a class="btn btn-default" onclick="$.get('/com?openPort=action');">Запустити спектрометр</a></li>
+                        <li><a class="btn btn-default" onclick="$.get('/com?closePort=action');">Вимкнути спектрометр</a></li>
+                    -->
+                        <li><a class="btn btn-default" href="/pages/management.html">Керування зйомкою</a></li>
+
+                        <li><a class="btn btn-default" onclick="$.get('/com?renew=action');">Перезапустити спектрометр</a></li>
+                        <!--<li class="divider"></li>-->
+                        <!--<li class="dropdown-header">Навігаційний заголовок</li>-->
+                        <!--<li><a href="#">Відокремлений лінк</a></li>-->
+                        <!--<li><a href="#">Ще один відокремлений лінк</a></li>-->
+                    </ul>
+                </li>
+                <li><a href="/pages/about.html">Контакти</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
